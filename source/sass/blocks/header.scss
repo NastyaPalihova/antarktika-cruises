@@ -1,0 +1,36 @@
+.header {
+  width: 100%;
+  min-height: 38px;
+  background-color: $color-tangaroa;
+  color: $color-alice-blue;
+}
+
+.header__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.header__nav-link {
+  color: $color-alice-blue;
+  font-weight: 500;
+  line-height: 19.5px;
+}
+
+.header__nav {
+  display: flex;
+  flex-direction: row;
+  gap: 33px;
+  padding-top: 13px;
+}
+
+.header__background-image {
+  object-fit: cover;
+  min-width: 100%;
+  min-height: 650px;
+}

@@ -1,8 +1,8 @@
 {
-  "name": "Liga-A-accelerator-template",
+  "name": "antarktika-cruises",
   "version": "2.0.0",
   "type": "module",
-  "description": "Стартовый шаблон сборки Лиги А",
+  "description": "Проект №2 в рамках Акселератора HTML Academy",
   "browserslist": [
     "last 3 versions",
     "IE 11",

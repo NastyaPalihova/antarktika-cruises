@@ -1,0 +1,26 @@
+.first-screen {
+  min-height: 650px;
+  width: 100%;
+  background-color: $color-tangaroa;
+  color: $color-alice-blue;
+  display: inline-block;
+}
+
+.first-screen h1 {
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 66px;
+  margin: 0;
+}
+
+.first-screen p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.first-screen__wrapper {
+  position: absolute;
+  top: 283px;
+  left: 198px;
+}

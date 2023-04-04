@@ -451,7 +451,7 @@ ul {
 body {
   width: 100%;
   height: 100%;
-  background-color: #ffffff;
+  background-color: #011c40;
 }
 
 a {
@@ -1201,12 +1201,12 @@ button,
 
 .header {
   width: 100%;
-  min-height: 38px;
   background-color: #011c40;
   color: #f9fbfd;
 }
 
 .header__wrapper {
+  min-height: 38px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1217,17 +1217,18 @@ button,
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding-top: 35px;
-  padding-bottom: 35px;
+  padding: 35px 103px;
   position: absolute;
   left: 0;
   top: 0;
+  width: 100%;
+  z-index: 1;
 }
 
 .header__nav-link {
   color: #f9fbfd;
   font-weight: 500;
-  line-height: 19.5px;
+  line-height: 19px;
 }
 
 .header__nav {
@@ -1242,19 +1243,19 @@ button,
   padding-top: 13px;
 }
 
-.header__background-image {
+.first-screen {
+  background-color: #011c40;
+  color: #f9fbfd;
+  position: relative;
+}
+
+.first-screen__image {
   -o-object-fit: cover;
   object-fit: cover;
   min-width: 100%;
   min-height: 650px;
-}
-
-.first-screen {
-  min-height: 650px;
+  height: 100%;
   width: 100%;
-  background-color: #011c40;
-  color: #f9fbfd;
-  display: inline-block;
 }
 
 .first-screen h1 {
@@ -1262,18 +1263,43 @@ button,
   font-size: 54px;
   line-height: 66px;
   margin: 0;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .first-screen p {
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .first-screen__wrapper {
   position: absolute;
   top: 283px;
   left: 198px;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+}
+
+.first-screen__image-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  grid-column: 1/-1;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+}
+
+.first-screen__container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1fr auto;
+  grid-template-columns: auto 1fr auto;
 }
 
 /* @mixin hover-focus {

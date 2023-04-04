@@ -1,25 +1,26 @@
 .header {
   width: 100%;
-  min-height: 38px;
   background-color: $color-tangaroa;
   color: $color-alice-blue;
 }
 
 .header__wrapper {
+  min-height: 38px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-top: 35px;
-  padding-bottom: 35px;
+  padding: 35px 103px;
   position: absolute;
   left: 0;
   top: 0;
+  width: 100%;
+  z-index: 1;
 }
 
 .header__nav-link {
   color: $color-alice-blue;
   font-weight: 500;
-  line-height: 19.5px;
+  line-height: 19px;
 }
 
 .header__nav {
@@ -29,8 +30,6 @@
   padding-top: 13px;
 }
 
-.header__background-image {
-  object-fit: cover;
-  min-width: 100%;
-  min-height: 650px;
-}
+// .header__background-image {
+
+// }

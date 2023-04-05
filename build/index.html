@@ -19,21 +19,21 @@
     <header class="header">
       <div class="container">
         <div class="header__wrapper">
-          <a class="header__logo-link" href="index.html">
-            <img class="header__logo-image" src="./img/svg/logo.svg" height="38" width="70" alt="Логотип проекта.">
+          <a class="logo" href="index.html">
+           <img src="./img/svg/logo.svg" height="38" width="70" alt="Логотип проекта.">
           </a>
-          <ul class="header__nav">
-            <li class="header__nav-item">
-              <a class="header__nav-link">Преимущества</a>
+          <ul class="nav nav--header">
+            <li class="nav__item">
+              <a class="nav__link" href="#advantages">Преимущества</a>
             </li>
-            <li class="header__nav-item">
-              <a class="header__nav-link">Направления</a>
+            <li class="nav-item">
+              <a class="nav__link" href="#directions">Направления</a>
             </li>
-            <li class="header__nav-item">
-              <a class="header__nav-link">Ближайшие круизы</a>
+            <li class="nav-item">
+              <a class="nav__link" href="#cruises">Ближайшие круизы</a>
             </li>
-            <li class="header__nav-item">
-              <a class="header__nav-link">Контакты</a>
+            <li class="nav__item">
+              <a class="nav__link" href="#contacts">Контакты</a>
             </li>
           </ul>
         </div>
@@ -43,19 +43,112 @@
 
       <section class="first-screen">
         <div class="first-screen__container">
-        <div class="first-screen__image-wrapper">
-          <img class="first-screen__image" src="./img/first-screen@1x.png" width="1366" height="650">
+          <div class="first-screen__wrapper">
+            <h1>Круизы в&nbsp;Антарктику</h1>
+            <p>Волшебный мир айсбергов и пингвинов</p>
+          </div>
+
+          <div class="first-screen__image-wrapper">
+
+            <picture>
+              <!-- <source type="image/webp" media="(max-width: 767px)"
+                srcset="./img/first-screen-mobile@1x.webp 1x, ./img/first-screen-mobile@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 1023px)"
+                srcset="./img/first-screen-tablet@1x.webp 1x, ./img/first-screen-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="./img/first-screen.webp 1x, ./img/first-screen@2x.webp 2x">  -->
+              <source media="(max-width: 767px)" srcset="./img/first-screen-mobile@1x.jpg 1x, ./img/first-screen-mobile@2x.jpg 2x"
+                width="320" height="500">
+              <source media="(max-width: 1023px)" srcset="./img/first-screen-tablet@1x.jpg 1x, ./img/first-screen-tablet@2x.jpg 2x"
+                width="768" height="637">
+              <img class="first-screen__image" src="./img/first-screen@1x.png"
+                srcset="./img/first-screen@1x.png 1x, ./img/first-screen@2x.png 2x" width="1366" height="658"
+                alt="Изображение Антарктики.">
+            </picture>
+          </div>
         </div>
-        <div class="first-screen__wrapper">
-          <h1>Круизы в Антарктику </h1>
-          <p>Волшебный мир айсбергов и пингвинов</p>
-        </div>
-      </div>
       </section>
 
+      <section class="trip">
+        <div class="trip__container container">
+          <div class="trip__text-wrapper">
+          <h2>Путешествие на край Земли</h2>
+          <p>Это волшебное путешествие поможет вам познакомиться поближе с удивительным миром Антарктики. Наш круизный лайнер отвезет вас на край Земли, где вы сможете увидеть: ледяные айсберги, несколько видов пингвинов, китов, морских котиков и многое другое.</p>
+        </div>
+
+        <picture>
+          <!-- <source type="image/webp" media="(max-width: 767px)"
+            srcset="./img/penguins-mobile@1x.webp 1x, ./img/penguins-mobile@2x.webp 2x">
+          <source type="image/webp" media="(max-width: 1023px)"
+            srcset="./img/penguins-tablet@1x.webp 1x, ./img/penguins-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="./img/penguins.webp 1x, ./img/penguins@2x.webp 2x">  -->
+          <source media="(max-width: 767px)" srcset="./img/penguins-mobile@1x.jpg 1x, ./img/penguins-mobile@2x.jpg 2x"
+            width="290" height="156">
+          <source media="(max-width: 1023px)" srcset="./img/penguins-tablet@1x.jpg 1x, ./img/penguins-tablet@2x.jpg 2x"
+            width="324" height="174">
+          <img src="./img/penguins@1x.jpg"
+            srcset="./img/penguins@1x.jpg 1x, ./img/penguins@2x.jpg 2x" width="560" height="301"
+            alt="Пингвины.">
+        </picture>
+        </div>
+      </section>
+
+      <section class="advantages">
+        <h2>Преимущества</h2>
+        <img src="./img/advantages@1x.png" height="562" weight="1366">
+      </section>
     </main>
-    <footer>
-      <div class="container"></div>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <a class="logo logo--link" href="index.html">
+            <img src="./img/svg/logo.svg" height="38" width="70" alt="Логотип проекта.">
+          </a>
+          <ul class="nav footer__nav">
+            <li class="nav-__tem footer__nav-item">
+              <a class="nav__link" href="#advantages">Преимущества</a>
+            </li>
+            <li class="nav__item footer__nav-item">
+              <a class="nav__link" href="#directions">Направления</a>
+            </li>
+            <li class="nav__item footer__nav-item">
+              <a class="nav__link" href="#cruises">Ближайшие круизы</a>
+            </li>
+            <li class="nav__item footer__nav-item">
+              <a class="nav__link" href="#contacts">Контакты</a>
+            </li>
+          </ul>
+
+          <ul class="social-list">
+            <li class="social-list__item social-list__item--odnoklassniki">
+              <a class="social-list__item-link" href="#!">
+                <span class="visually-hidden">Одноклассники</span>
+                <svg class="social-list__icon" width="20" height="20">
+                  <use href="./img/sprite.svg#odnoklassniki"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="social-list__item social-list__item--vkontakte">
+              <a class="social-list__item-link" href="#!">
+                <span class="visually-hidden">Дзен</span>
+                <svg class="social-list__icon" width="20" height="20">
+                  <use href="./img/sprite.svg#dzen"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="social-list__item social-list__item--pinterest">
+              <a class="social-list__item-link" href="#!">
+                <span class="visually-hidden">Реддит</span>
+                <svg class="social-list__icon" width="20" height="20">
+                  <use href="./img/sprite.svg#reddit"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </footer>
   </div>
 

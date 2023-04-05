@@ -1,0 +1,28 @@
+.trip {
+  background-color: $color-alice-blue;
+}
+
+.trip h2 {
+  margin: 0;
+  margin-bottom: 21px;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 42px;
+}
+
+.trip p {
+  margin: 0;
+  max-width: 512px;
+}
+
+.trip__container {
+  padding-top: 112px;
+  padding-bottom: 145px;
+  display: flex;
+  gap: 88px;
+  justify-content: center;
+}
+
+.trip__text-wrapper {
+  padding-top: 58px;
+}

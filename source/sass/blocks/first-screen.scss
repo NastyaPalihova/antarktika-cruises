@@ -1,15 +1,72 @@
 .first-screen {
-  background-color: $color-tangaroa;
-  color: $color-alice-blue;
+  width: 100%;
+  height: auto;
+}
+
+.first-screen__container {
+  max-width: 100%;
+  margin: 0 auto;
+  display: grid;
+  min-height: 658px;
+  grid-template-columns: auto 1fr auto;
   position: relative;
+
+  @include vp-1023 {
+    min-height: 638px;
+  }
+
+  @include vp-767 {
+    min-height: 500px;
+  }
+}
+
+.first-screen__image-wrapper {
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  img {
+    object-fit: cover;
+    object-position: 50% 100%;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.first-screen__image-wrapper::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1;
 }
 
 .first-screen__image {
-  object-fit: cover;
-  min-width: 100%;
-  min-height: 650px;
-  height: 100%;
+  position: relative;
   width: 100%;
+  z-index: 0;
+  height: 100%;
+}
+
+.first-screen__wrapper {
+  font-style: normal;
+  color: $color-alice-blue;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  padding: 271px 50px 120px 14.55%;
+  z-index: 2;
+
+  @include vp-1023 {
+    padding: 265px 50px 120px 5.75%;
+  }
+
+  @include vp-767 {
+    padding: 175px 50px 120px 5.05%;
+  }
 }
 
 .first-screen h1 {
@@ -17,7 +74,18 @@
   font-size: 54px;
   line-height: 66px;
   margin: 0;
+  margin-bottom: 11px;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+  @include vp-1023 {
+    font-size: 50px;
+    margin-bottom: 9px;
+  }
+
+  @include vp-767 {
+    font-size: 36px;
+    line-height: 45px;
+  }
 }
 
 .first-screen p {
@@ -25,25 +93,14 @@
   font-size: 20px;
   line-height: 24px;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-}
+  margin: 0;
 
-.first-screen__wrapper {
-  position: absolute;
-  top: 283px;
-  left: 198px;
-  grid-column: 2/3;
-  grid-row: 1/2;
-}
+  @include vp-1023 {
+    font-size: 18px;
+  }
 
-.first-screen__image-wrapper {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  grid-column: 1/-1;
-  grid-row: 1/2;
-}
-
-.first-screen__container {
-  display: grid;
-  grid-template-columns: auto 1fr auto;
+  @include vp-767 {
+    font-size: 16px;
+    max-width: 199px;
+  }
 }

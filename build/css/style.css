@@ -1563,8 +1563,8 @@ button,
   transition: opacity 0.3s ease;
   pointer-events: none;
   position: absolute;
-  right: 0;
-  top: 30%;
+  right: -1px;
+  top: 48%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -1737,7 +1737,7 @@ button,
   }
 
   .first-screen__wrapper {
-    padding: 175px 50px 120px 5.05%;
+    padding: 175px 50px 120px 4.65%;
   }
 
   .first-screen h1 {
@@ -1858,7 +1858,7 @@ button,
     opacity: 0;
     margin: 0;
     margin-left: 36px;
-    padding: 123px 20px 20px 20px;
+    padding: 85px 25px 25px;
     position: fixed;
     pointer-events: none;
     top: 0;
@@ -1877,13 +1877,13 @@ button,
   }
 
   .header__item:not(:last-child) {
-    margin: 0 0 36px 0;
+    margin: 0 0 26px 0;
   }
 
   .header__link {
     color: #011c40;
-    font-size: 20px;
-    line-height: 25px;
+    font-size: 18px;
+    line-height: 22px;
   }
 }
 

@@ -16,12 +16,50 @@
 
 <body>
   <div class="wrapper">
-    <header class="header">
+
+    <header class="header" data-header="">
       <div class="container">
         <div class="header__wrapper">
-          <a class="logo" href="index.html">
+          <a class="logo" href="index.html" aria-label="Переход на главную страницу.">
+            <svg width="70" height="38" viewBox="0 0 70 38" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M0.903517 31.125L14.6726 12.5429L18.4395 14.556L27.4026 0L32.9879 6.65881L35.0665 4.95532L43.1199 15.1755L48.8355 8.36191L64.8126 31.125L49.42 11.7689L47.0817 19.8984L49.225 26.3249L35.456 7.35558L35.3069 13.8279L43.1199 31.125L28.5064 4.33574L32.7282 18.8145L26.8181 4.72292L23.5706 14.0916L24.2198 7.97472L16.1013 30.0411L17.0753 20.75L13.6981 17.0338L0.903517 31.125Z"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M69.4414 34.0314C47.641 16.428 13.7091 40.6289 0 31.2961C15.0723 44.5215 50.3019 22.1644 69.4414 34.0314Z"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M70 35.4157C52.8956 24.5171 27.4568 39.6838 14.4189 36.1717C28.5467 43.0283 54.8482 27.8361 70 35.4157Z"/>
+              </svg>
+            <!-- <img src="./img/svg/logo.svg" height="38" width="70" alt="Логотип проекта."> -->
+          </a>
+        <nav class="header__nav">
+          <ul class="header__list">
+            <li class="header__item"><a class="header__link" href="#advantages">Преимущества</a></li>
+            <li class="header__item"><a class="header__link" href="#directions">Направления</a></li>
+            <li class="header__item"><a class="header__link"  href="#cruises">Ближайшие круизы</a></li>
+            <li class="header__item"><a class="header__link" href="#contacts">Контакты</a></li>
+          </ul>
+
+        </nav>
+
+        <button class="burger header__burger" type="button" aria-label="Переключатель отображения меню"
+          aria-pressed="false" data-burger=""><span class="visually-hidden">Открыть меню</span>
+          <svg class="header__burger-icon" width="13" height="13" aria-hidden="true">
+            <use  href="./img/sprite.svg#close-menu"></use>
+          </svg>
+        </button>
+
+        <div class="nav__overlay" data-burger-close=""></div>
+      </div>
+    </div>
+    </header>
+
+<!--
+    <header class="header" data-header>
+      <div class="container">
+        <div class="header__wrapper">
+          <a class="logo" href="index.html" aria-label="Переход на главную страницу.">
            <img src="./img/svg/logo.svg" height="38" width="70" alt="Логотип проекта.">
           </a>
+          <button class="burger" data-burger>
+            <span class="visually-hidden">Открыть</span>
+          </button>
           <ul class="nav nav--header">
             <li class="nav__item">
               <a class="nav__link" href="#advantages">Преимущества</a>
@@ -38,7 +76,7 @@
           </ul>
         </div>
       </div>
-    </header>
+    </header> -->
     <main>
 
       <section class="first-screen">

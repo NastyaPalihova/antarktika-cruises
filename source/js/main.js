@@ -1,5 +1,6 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {Form} from './modules/form-validate/form';
+import {Burger} from './utils/burger';
 
 // ---------------------------------
 
@@ -9,6 +10,8 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
 
   iosVhFix();
+  const burger = new Burger();
+  burger.init();
   // Modules
   // ---------------------------------
 

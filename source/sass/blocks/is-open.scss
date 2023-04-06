@@ -1,0 +1,19 @@
+.is-open .nav__overlay {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 35px;
+  height: 100vh;
+  overflow: hidden;
+  background-color: rgba(0, 43, 102, 0.5);
+}
+
+.is-open .logo svg path {
+  fill: $color-tangaroa;
+}
+
+.is-open .logo {
+  margin-left: 36px;
+  z-index: 40;
+}

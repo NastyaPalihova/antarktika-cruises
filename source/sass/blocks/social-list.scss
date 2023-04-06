@@ -4,15 +4,17 @@
   align-items: center;
   margin-left: auto;
   padding-top: 11px;
+  flex-wrap: wrap;
 
   @include vp-1023 {
-    padding-top: 4px;
-    gap: 21px;
+    padding-top: 8px;
+    gap: 22px;
   }
 
   @include vp-767 {
     margin-right: auto;
-    margin-left: 0;
+    margin-left: -4px;
+    margin-top: 15px;
   }
 }
 

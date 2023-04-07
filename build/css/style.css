@@ -1661,7 +1661,6 @@ button,
 
 .catalog h2 {
   color: #011c40;
-  margin: 0;
   text-align: center;
   margin: 0 0 48px;
 }
@@ -1697,6 +1696,8 @@ button,
 }
 
 .cards {
+  margin-left: auto;
+  margin-right: auto;
   min-width: 260px;
   min-height: 386px;
 }
@@ -1707,8 +1708,8 @@ button,
 }
 
 .cards__front h3 {
-  bottom: 13px;
-  left: 37px;
+  bottom: 3px;
+  left: 30px;
   content: "";
   position: absolute;
   color: #f9fbfd;
@@ -1764,6 +1765,11 @@ button,
   padding: 25px 35px;
   overflow: auto;
   max-height: 386px;
+}
+
+.cards__back::-webkit-scrollbar {
+  width: 4px;
+  background-color: #d8d8d9;
 }
 
 .cards__back-list dt {
@@ -1846,6 +1852,13 @@ button,
     }
   }
 */
+
+@media (max-width: 1310px) {
+  .catalog__list {
+    -ms-grid-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
 
 @media (max-width: 1088px) {
   .footer__nav {
@@ -1997,6 +2010,31 @@ button,
   .advantages__icon--zodiac {
     width: 36px;
     height: 26px;
+  }
+
+  .catalog h2 {
+    margin: 0 0 50px;
+  }
+
+  .catalog {
+    padding: 89px 60px 120px;
+  }
+
+  .catalog__list {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+
+  .cards {
+    min-width: 309px;
+    max-width: 309px;
+  }
+
+  .cards__front h3 {
+    bottom: 10px;
+    left: 35px;
   }
 }
 
@@ -2238,6 +2276,31 @@ button,
     -ms-grid-rows: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 31px;
+  }
+
+  .catalog h2 {
+    margin: 0 0 31px;
+  }
+
+  .catalog {
+    padding: 55px 25px;
+  }
+
+  .catalog__list {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .cards {
+    min-width: 270px;
+    max-width: 270px;
+  }
+
+  .cards__front h3 {
+    bottom: 1px;
+    left: 25px;
   }
 }
 

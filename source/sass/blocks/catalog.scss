@@ -1,12 +1,27 @@
 .catalog h2 {
   color: $color-tangaroa;
-  margin: 0;
   text-align: center;
   margin: 0 0 48px;
+
+  @include vp-1023 {
+    margin: 0 0 50px;
+  }
+
+  @include vp-767 {
+    margin: 0 0 31px;
+  }
 }
 
 .catalog {
   padding: 86px 118px 120px;
+
+  @include vp-1023 {
+    padding: 89px 60px 120px;
+  }
+
+  @include vp-767 {
+    padding: 55px 25px;
+  }
 }
 
 .catalog__list {
@@ -16,6 +31,20 @@
   grid-template-rows: 1fr 1fr;
   min-width: 260px;
   min-height: 386px;
+
+  @include vp-1310 {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  @include vp-1023 {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
 }
 
 .catalog__item,
@@ -23,16 +52,6 @@
 .catalog__item::after {
   box-sizing: border-box;
 }
-
-// .cards__wrapper {
-//   display: flex;
-//   margin: 0 -15px;
-// }
-
-// .cards__block {
-//   width: 25%;
-//   padding: 0 15px;
-// }
 
 .cards__item {
   display: block;
@@ -42,8 +61,20 @@
 }
 
 .cards {
+  margin-left: auto;
+  margin-right: auto;
   min-width: 260px;
   min-height: 386px;
+
+  @include vp-1023 {
+    min-width: 309px;
+    max-width: 309px;
+  }
+
+  @include vp-767 {
+    min-width: 270px;
+    max-width: 270px;
+  }
 }
 
 .cards__front {
@@ -52,11 +83,21 @@
 }
 
 .cards__front h3 {
-  bottom: 13px;
-  left: 37px;
+  bottom: 3px;
+  left: 30px;
   content: "";
   position: absolute;
   color: $color-alice-blue;
+
+  @include vp-1023 {
+    bottom: 10px;
+    left: 35px;
+  }
+
+  @include vp-767 {
+    bottom: 1px;
+    left: 25px;
+  }
 }
 
 .cards__item .cards__front {
@@ -100,6 +141,11 @@
   padding: 25px 35px;
   overflow: auto;
   max-height: 386px;
+}
+
+.cards__back::-webkit-scrollbar {
+  width: 4px;
+  background-color: $color-quartz;
 }
 
 .cards__back-list dt {

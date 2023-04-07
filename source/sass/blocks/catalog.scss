@@ -1,0 +1,143 @@
+.catalog h2 {
+  color: $color-tangaroa;
+  margin: 0;
+  text-align: center;
+  margin: 0 0 48px;
+}
+
+.catalog {
+  padding: 86px 118px 120px;
+}
+
+.catalog__list {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  min-width: 260px;
+  min-height: 386px;
+}
+
+.catalog__item,
+.catalog__item::before,
+.catalog__item::after {
+  box-sizing: border-box;
+}
+
+// .cards__wrapper {
+//   display: flex;
+//   margin: 0 -15px;
+// }
+
+// .cards__block {
+//   width: 25%;
+//   padding: 0 15px;
+// }
+
+.cards__item {
+  display: block;
+  text-decoration: none;
+  position: relative;
+  background-color: $color-tangaroa;
+}
+
+.cards {
+  min-width: 260px;
+  min-height: 386px;
+}
+
+.cards__front {
+  position: relative;
+  overflow: hidden;
+}
+
+.cards__front h3 {
+  bottom: 13px;
+  left: 37px;
+  content: "";
+  position: absolute;
+  color: $color-alice-blue;
+}
+
+.cards__item .cards__front {
+  backface-visibility: hidden;
+  transition: all 0.2s ease;
+}
+
+.cards__item .cards__back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 28px 25px 35px 25px;
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+  transition: all 0.2s ease;
+
+  color: $color-alice-blue;
+  min-height: 386px;
+}
+
+.cards__back h3 {
+  margin: 0;
+  margin-bottom: 14px;
+}
+
+.cards__item:hover .cards__front {
+  transform: rotateY(-180deg);
+}
+
+.cards__item:hover .cards__back {
+  transform: rotateY(0);
+}
+
+.cards__front img {
+  object-fit: cover;
+  display: block;
+}
+
+.cards__back {
+  padding: 25px 35px;
+  overflow: auto;
+  max-height: 386px;
+}
+
+.cards__back-list dt {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  margin-bottom: 1px;
+}
+
+.cards__back-list {
+  margin: 0;
+  margin-bottom: 24px;
+}
+
+.cards__back-list dd {
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0;
+  color: $color-quartz;
+  margin-bottom: 11px;
+}
+
+.cards__button {
+  border: none;
+  outline: none;
+  background-color: $color-alice-blue;
+  padding: 12px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 14px;
+  min-width: 210px;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

@@ -22,31 +22,34 @@
         <div class="header__wrapper">
           <a class="logo" href="index.html" aria-label="Переход на главную страницу.">
             <svg width="70" height="38" viewBox="0 0 70 38" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M0.903517 31.125L14.6726 12.5429L18.4395 14.556L27.4026 0L32.9879 6.65881L35.0665 4.95532L43.1199 15.1755L48.8355 8.36191L64.8126 31.125L49.42 11.7689L47.0817 19.8984L49.225 26.3249L35.456 7.35558L35.3069 13.8279L43.1199 31.125L28.5064 4.33574L32.7282 18.8145L26.8181 4.72292L23.5706 14.0916L24.2198 7.97472L16.1013 30.0411L17.0753 20.75L13.6981 17.0338L0.903517 31.125Z"/>
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M69.4414 34.0314C47.641 16.428 13.7091 40.6289 0 31.2961C15.0723 44.5215 50.3019 22.1644 69.4414 34.0314Z"/>
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M70 35.4157C52.8956 24.5171 27.4568 39.6838 14.4189 36.1717C28.5467 43.0283 54.8482 27.8361 70 35.4157Z"/>
-              </svg>
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M0.903517 31.125L14.6726 12.5429L18.4395 14.556L27.4026 0L32.9879 6.65881L35.0665 4.95532L43.1199 15.1755L48.8355 8.36191L64.8126 31.125L49.42 11.7689L47.0817 19.8984L49.225 26.3249L35.456 7.35558L35.3069 13.8279L43.1199 31.125L28.5064 4.33574L32.7282 18.8145L26.8181 4.72292L23.5706 14.0916L24.2198 7.97472L16.1013 30.0411L17.0753 20.75L13.6981 17.0338L0.903517 31.125Z" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M69.4414 34.0314C47.641 16.428 13.7091 40.6289 0 31.2961C15.0723 44.5215 50.3019 22.1644 69.4414 34.0314Z" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M70 35.4157C52.8956 24.5171 27.4568 39.6838 14.4189 36.1717C28.5467 43.0283 54.8482 27.8361 70 35.4157Z" />
+            </svg>
           </a>
-        <nav class="header__nav nav">
-          <ul class="header__list">
-            <li class="header__item"><a class="header__link nav__link" href="#advantages">Преимущества</a></li>
-            <li class="header__item"><a class="header__link nav__link" href="#directions">Направления</a></li>
-            <li class="header__item"><a class="header__link nav__link"  href="#cruises">Ближайшие круизы</a></li>
-            <li class="header__item"><a class="header__link nav__link" href="#contacts">Контакты</a></li>
-          </ul>
+          <nav class="header__nav nav">
+            <ul class="header__list">
+              <li class="header__item"><a class="header__link nav__link" href="#advantages">Преимущества</a></li>
+              <li class="header__item"><a class="header__link nav__link" href="#directions">Направления</a></li>
+              <li class="header__item"><a class="header__link nav__link" href="#cruises">Ближайшие круизы</a></li>
+              <li class="header__item"><a class="header__link nav__link" href="#contacts">Контакты</a></li>
+            </ul>
 
-        </nav>
+          </nav>
 
-        <button class="burger header__burger" type="button" aria-label="Переключатель отображения меню"
-          aria-pressed="false" data-burger=""><span class="visually-hidden">Открыть меню</span>
-          <svg class="header__burger-icon" width="13" height="13" aria-hidden="true">
-            <use  href="./img/sprite.svg#close-menu"></use>
-          </svg>
-        </button>
+          <button class="burger header__burger" type="button" aria-label="Переключатель отображения меню"
+            aria-pressed="false" data-burger=""><span class="visually-hidden">Открыть меню</span>
+            <svg class="header__burger-icon" width="13" height="13" aria-hidden="true">
+              <use href="./img/sprite.svg#close-menu"></use>
+            </svg>
+          </button>
 
-        <div class="nav__overlay" data-burger-close=""></div>
+          <div class="nav__overlay" data-close-menu=""></div>
+        </div>
       </div>
-    </div>
     </header>
 
     <main>
@@ -65,10 +68,12 @@
               <source type="image/webp" media="(max-width: 1023px)"
                 srcset="./img/first-screen-tablet@1x.webp 1x, ./img/first-screen-tablet@2x.webp 2x">
               <source type="image/webp" srcset="./img/first-screen.webp 1x, ./img/first-screen@2x.webp 2x">  -->
-              <source media="(max-width: 767px)" srcset="./img/first-screen-mobile@1x.jpg 1x, ./img/first-screen-mobile@2x.jpg 2x"
-                width="320" height="500">
-              <source media="(max-width: 1023px)" srcset="./img/first-screen-tablet@1x.jpg 1x, ./img/first-screen-tablet@2x.jpg 2x"
-                width="768" height="637">
+              <source media="(max-width: 767px)"
+                srcset="./img/first-screen-mobile@1x.jpg 1x, ./img/first-screen-mobile@2x.jpg 2x" width="320"
+                height="500">
+              <source media="(max-width: 1023px)"
+                srcset="./img/first-screen-tablet@1x.jpg 1x, ./img/first-screen-tablet@2x.jpg 2x" width="768"
+                height="637">
               <img class="first-screen__image" src="./img/first-screen@1x.png"
                 srcset="./img/first-screen@1x.png 1x, ./img/first-screen@2x.png 2x" width="1366" height="658"
                 alt="Изображение Антарктики.">
@@ -80,31 +85,85 @@
       <section class="trip">
         <div class="trip__container container">
           <div class="trip__text-wrapper">
-          <h2>Путешествие на&nbsp;край Земли</h2>
-          <p>Это волшебное путешествие поможет вам познакомиться поближе с&nbsp;удивительным миром Антарктики. Наш круизный лайнер отвезет вас на&nbsp;край Земли, где вы&nbsp;сможете увидеть: ледяные айсберги, несколько видов пингвинов, китов, морских котиков и&nbsp;многое другое.</p>
-        </div>
+            <h2>Путешествие на&nbsp;край Земли</h2>
+            <p>Это волшебное путешествие поможет вам познакомиться поближе с&nbsp;удивительным миром Антарктики. Наш
+              круизный лайнер отвезет вас на&nbsp;край Земли, где вы&nbsp;сможете увидеть: ледяные айсберги, несколько
+              видов пингвинов, китов, морских котиков и&nbsp;многое другое.</p>
+          </div>
 
-        <picture>
-          <!-- <source type="image/webp" media="(max-width: 767px)"
+          <picture>
+            <!-- <source type="image/webp" media="(max-width: 767px)"
             srcset="./img/penguins-mobile@1x.webp 1x, ./img/penguins-mobile@2x.webp 2x">
           <source type="image/webp" media="(max-width: 1023px)"
             srcset="./img/penguins-tablet@1x.webp 1x, ./img/penguins-tablet@2x.webp 2x">
           <source type="image/webp" srcset="./img/penguins.webp 1x, ./img/penguins@2x.webp 2x">  -->
-          <source media="(max-width: 767px)" srcset="./img/penguins-mobile@1x.jpg 1x, ./img/penguins-mobile@2x.jpg 2x"
-            width="290" height="156">
-          <source media="(max-width: 1023px)" srcset="./img/penguins-tablet@1x.jpg 1x, ./img/penguins-tablet@2x.jpg 2x"
-            width="324" height="174">
-          <img src="./img/penguins@1x.jpg"
-            srcset="./img/penguins@1x.jpg 1x, ./img/penguins@2x.jpg 2x" width="560" height="301"
-            alt="Пингвины.">
-        </picture>
+            <source media="(max-width: 767px)" srcset="./img/penguins-mobile@1x.jpg 1x, ./img/penguins-mobile@2x.jpg 2x"
+              width="290" height="156">
+            <source media="(max-width: 1023px)"
+              srcset="./img/penguins-tablet@1x.jpg 1x, ./img/penguins-tablet@2x.jpg 2x" width="324" height="174">
+            <img src="./img/penguins@1x.jpg" srcset="./img/penguins@1x.jpg 1x, ./img/penguins@2x.jpg 2x" width="560"
+              height="301" alt="Пингвины.">
+          </picture>
         </div>
       </section>
 
       <section class="advantages">
-        <h2>Преимущества</h2>
-        <img src="./img/advantages@1x.png" height="562" weight="1366">
+        <div class="advantages__container">
+          <div class="advantages__wrapper">
+            <h2>Преимущества</h2>
+            <ul class="advantages__list">
+              <li class="advantages__item">
+                <svg class="advantages__icon advantages__icon--liner" width="27" height="32">
+                  <use href="./img/sprite.svg#liner"></use>
+                </svg>
+                <h3>Небольшой круизный лайнер</h3>
+                <p>Круизный лайнер, рассчитанный всего лишь на&nbsp;300&nbsp;гостей, поможет избежать шума
+                  и&nbsp;очередей и&nbsp;даст возможность насладиться видами и&nbsp;природой.</p>
+              </li>
+
+              <li class="advantages__item">
+                <svg class="advantages__icon advantages__icon--check" width="38" height="32">
+                  <use href="./img/sprite.svg#check"></use>
+                </svg>
+                <h3>Система все&nbsp;включено</h3>
+                <p>Все наши круизы работают по&nbsp;системе &laquo;Все Включено&raquo;. Великолепные блюда
+                  и&nbsp;безлимитный бар доступны для вас 24&nbsp;часа.</p>
+              </li>
+
+              <li class="advantages__item">
+                <svg class="advantages__icon advantages__icon--zodiac" width="44" height="32">
+                  <use href="./img/sprite.svg#zodiac"></use>
+                </svg>
+                <h3>Экскурсионные туры на&nbsp;Zodiac</h3>
+                <p>Экскурсионные туры к&nbsp;берегам Антарктиды совершаются на&nbsp;оборудованных лодках типа Zodiac
+                  c&nbsp;опытными экскурсоводами.</p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="advantages__image-wrapper">
+
+            <picture>
+              <!-- <source type="image/webp" media="(max-width: 767px)"
+                srcset="./img/advantages-mobile@1x.webp 1x, ./img/advantages-mobile@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 1023px)"
+                srcset="./img/advantages-tablet@1x.webp 1x, ./img/advantages-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="./img/advantages@1x.webp 1x, ./img/advantages@2x.webp 2x">  -->
+              <source media="(max-width: 767px)"
+                srcset="./img/advantages-mobile@1x.png 1x, ./img/advantages-mobile@2x.png 2x" width="320" height="997">
+              <source media="(max-width: 1023px)"
+                srcset="./img/advantages-tablet@1x.png 1x, ./img/advantages-tablet@2x.png 2x" width="768" height="588">
+              <img class="advantages__image" src="./img/advantages@1x.png"
+                srcset="./img/advantages@1x.png 1x, ./img/advantages@2x.png 2x" width="1366" height="562"
+                alt="Фоновое изображение гор.">
+            </picture>
+          </div>
+        </div>
       </section>
+
+
+
+
     </main>
 
     <footer class="footer">
@@ -112,10 +171,13 @@
         <div class="footer__wrapper">
           <a class="logo" href="index.html" aria-label="Переход на главную страницу.">
             <svg width="70" height="38" viewBox="0 0 70 38" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M0.903517 31.125L14.6726 12.5429L18.4395 14.556L27.4026 0L32.9879 6.65881L35.0665 4.95532L43.1199 15.1755L48.8355 8.36191L64.8126 31.125L49.42 11.7689L47.0817 19.8984L49.225 26.3249L35.456 7.35558L35.3069 13.8279L43.1199 31.125L28.5064 4.33574L32.7282 18.8145L26.8181 4.72292L23.5706 14.0916L24.2198 7.97472L16.1013 30.0411L17.0753 20.75L13.6981 17.0338L0.903517 31.125Z"/>
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M69.4414 34.0314C47.641 16.428 13.7091 40.6289 0 31.2961C15.0723 44.5215 50.3019 22.1644 69.4414 34.0314Z"/>
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M70 35.4157C52.8956 24.5171 27.4568 39.6838 14.4189 36.1717C28.5467 43.0283 54.8482 27.8361 70 35.4157Z"/>
-              </svg>
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M0.903517 31.125L14.6726 12.5429L18.4395 14.556L27.4026 0L32.9879 6.65881L35.0665 4.95532L43.1199 15.1755L48.8355 8.36191L64.8126 31.125L49.42 11.7689L47.0817 19.8984L49.225 26.3249L35.456 7.35558L35.3069 13.8279L43.1199 31.125L28.5064 4.33574L32.7282 18.8145L26.8181 4.72292L23.5706 14.0916L24.2198 7.97472L16.1013 30.0411L17.0753 20.75L13.6981 17.0338L0.903517 31.125Z" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M69.4414 34.0314C47.641 16.428 13.7091 40.6289 0 31.2961C15.0723 44.5215 50.3019 22.1644 69.4414 34.0314Z" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M70 35.4157C52.8956 24.5171 27.4568 39.6838 14.4189 36.1717C28.5467 43.0283 54.8482 27.8361 70 35.4157Z" />
+            </svg>
           </a>
           <ul class="nav footer__nav">
             <li class="nav__item footer__nav-item">

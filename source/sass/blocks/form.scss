@@ -1,0 +1,203 @@
+.form {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.form__container {
+  max-width: 100%;
+  margin: 0 auto;
+  display: grid;
+  min-height: 555px;
+  grid-template-columns: auto 1fr auto;
+  position: relative;
+
+  @include vp-1023 {
+    min-height: 805px;
+  }
+
+  @include vp-767 {
+    min-height: 760px;
+  }
+}
+
+.form__image-wrapper {
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  img {
+    position: relative;
+    z-index: 0;
+    object-fit: cover;
+    object-position: 50% 100%;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.form__image-wrapper::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.form__text-wrapper {
+  font-style: normal;
+  color: $color-tangaroa;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  text-align: center;
+  padding: 213px 163px 110px 163px;
+  z-index: 2;
+
+  @include vp-1023 {
+    padding: 89px 44px;
+  }
+
+  @include vp-767 {
+    padding: 55px 15px;
+  }
+}
+
+.form__wrapper {
+  position: absolute;
+  z-index: 5;
+  min-height: 455px;
+  padding: 50px;
+  right: 163px;
+  top: 49px;
+  background-color: $color-tangaroa;
+}
+
+.form__wrapper h3 {
+  max-width: 303px;
+  color: $color-alice-blue;
+  margin-top: -6px;
+  margin-bottom: 29px;
+}
+
+.form h2 {
+  margin: 0;
+  margin-bottom: 8px;
+  font-size: 40px;
+  line-height: 60px;
+  font-weight: 700;
+  text-align: start;
+
+  @include vp-1023 {
+    margin-bottom: 25px;
+  }
+}
+
+.form p {
+  max-width: 352px;
+  text-align: start;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  margin: 0;
+}
+
+.form__section-wrapper input {
+  border: none;
+  background-color: $color-alice-blue;
+  padding: 12px 16px;
+  min-width: 303px;
+  margin-bottom: 20px;
+}
+
+.form__section-wrapper input::placeholder {
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 21px;
+  color: rgba(1, 28, 64, 0.7);
+}
+
+.form__submit-section {
+  max-width: 303px;
+  margin-top: -4px;
+}
+
+
+.form__agree-label span {
+  color: $color-alice-blue;
+  font-size: 10px;
+  line-height: 13px;
+  padding-top: 5px;
+}
+
+.form__agree {
+  margin-bottom: 29px;
+}
+
+.form__button {
+  width: 100%;
+  text-align: center;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  padding: 11px 30px;
+}
+
+// из другого проекта
+
+.form__agree-label {
+  position: relative;
+  display: block;
+  padding-left: 23px;
+}
+
+.form__agree-mark {
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  background-color: $color-alice-blue;
+
+  @include vp-767 {
+    top: 6px;
+  }
+}
+
+.form__agree-label:hover .form__agree-mark,
+.form__agree span:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.form__agree:focus-within {
+  opacity: 0.6;
+}
+
+.form__agree-label:active .form__agree-mark,
+.form__agree span:active {
+  opacity: 0.3;
+}
+
+.form__agree-label input:disabled + .form__agree-mark {
+  opacity: 0.1;
+}
+
+.form__agree-label input[type="checkbox"]:checked + .form__agree-mark::before {
+  position: absolute;
+  top: 3px;
+  left: 6px;
+  width: 6px;
+  height: 9px;
+  background-color: transparent;
+  color: $color-tangaroa;
+  border: 1px solid;
+  box-sizing: border-box;
+  border-top: none;
+  border-left: none;
+  transform: rotate(45deg);
+  content: "";
+}

@@ -1290,25 +1290,6 @@ button,
   transition: color 0.3s ease;
 }
 
-.nav__link {
-  color: #f9fbfd;
-  font-weight: 500;
-  line-height: 19px;
-  cursor: pointer;
-  white-space: pre;
-}
-
-.nav__link:hover,
-.nav__link:focus {
-  opacity: 0.6;
-  outline: none;
-}
-
-.nav__link:active {
-  opacity: 0.3;
-  outline: none;
-}
-
 .header__burger-icon {
   stroke: #ffffff;
   opacity: 0;
@@ -1331,6 +1312,10 @@ button,
   -webkit-transition: opacity 0.3s ease 0.2s;
   -o-transition: opacity 0.3s ease 0.2s;
   transition: opacity 0.3s ease 0.2s;
+}
+
+.header__overlay {
+  display: none;
 }
 
 .first-screen {
@@ -1466,10 +1451,6 @@ button,
 .nav__link:active {
   opacity: 0.3;
   outline: none;
-}
-
-.nav__overlay {
-  display: none;
 }
 
 .logo--link:hover,
@@ -2488,7 +2469,7 @@ button,
     margin-top: 15px;
   }
 
-  .is-open .nav__overlay {
+  .is-open .header__overlay {
     display: block;
     position: absolute;
     top: 0;

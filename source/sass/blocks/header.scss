@@ -157,24 +157,6 @@
   }
 }
 
-.nav__link {
-  color: $color-alice-blue;
-  font-weight: 500;
-  line-height: 19px;
-  cursor: pointer;
-  white-space: pre;
-
-  &:hover,
-  &:focus {
-    opacity: 0.6;
-    outline: none;
-  }
-
-  &:active {
-    opacity: 0.3;
-    outline: none;
-  }
-}
 
 .header__burger-icon {
   stroke: #ffffff;
@@ -193,3 +175,9 @@
     transition: opacity 0.3s ease 0.2s;
   }
 }
+
+
+.header__overlay {
+  display: none;
+}
+

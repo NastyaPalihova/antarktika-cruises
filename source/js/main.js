@@ -2,6 +2,8 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {Form} from './modules/form-validate/form';
 import {Burger} from './utils/burger';
 import {initPhoneMask} from './utils/phone-mask';
+import {observer, map} from './utils/map';
+
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -22,6 +24,7 @@ window.addEventListener('DOMContentLoaded', () => {
     window.form = form;
     form.init();
     initPhoneMask();
+    observer.observe(map);
   });
 });
 

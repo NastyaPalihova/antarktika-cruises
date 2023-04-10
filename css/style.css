@@ -2010,7 +2010,8 @@ button,
   border: none;
   outline: none;
   background-color: #f9fbfd;
-  padding: 12px;
+  color: #011c40;
+  padding: 8px;
   text-align: center;
   font-weight: 600;
   font-size: 14px;
@@ -2564,7 +2565,7 @@ button,
     top: 0;
     left: 0;
     width: 35px;
-    height: 100vh;
+    height: 2100vh;
     overflow: hidden;
     background-color: rgba(0, 43, 102, 0.5);
   }

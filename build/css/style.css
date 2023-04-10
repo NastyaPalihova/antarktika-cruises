@@ -1950,12 +1950,14 @@ button,
   margin-bottom: 14px;
 }
 
-.cards__item:hover .cards__front {
+.cards__item:hover .cards__front,
+.cards:focus-within .cards__front {
   -webkit-transform: rotateY(-180deg);
   transform: rotateY(-180deg);
 }
 
-.cards__item:hover .cards__back {
+.cards__item:hover .cards__back,
+.cards:focus-within .cards__back {
   -webkit-transform: rotateY(0);
   transform: rotateY(0);
 }
@@ -2015,7 +2017,7 @@ button,
   text-align: center;
   font-weight: 600;
   font-size: 14px;
-  max-width: 210px;
+  max-width: 85%;
 }
 
 .cards__button:hover,

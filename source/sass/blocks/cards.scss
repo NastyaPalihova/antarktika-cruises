@@ -71,11 +71,13 @@
   margin-bottom: 14px;
 }
 
-.cards__item:hover .cards__front {
+.cards__item:hover .cards__front,
+.cards:focus-within .cards__front {
   transform: rotateY(-180deg);
 }
 
-.cards__item:hover .cards__back {
+.cards__item:hover .cards__back,
+.cards:focus-within .cards__back {
   transform: rotateY(0);
 }
 
@@ -133,7 +135,7 @@
   text-align: center;
   font-weight: 600;
   font-size: 14px;
-  max-width: 210px;
+  max-width: 85%;
 
   &:hover,
   &:focus {

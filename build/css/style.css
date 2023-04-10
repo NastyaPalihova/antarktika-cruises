@@ -1902,7 +1902,7 @@ button,
 
 .cards__front {
   position: relative;
-  overflow: hidden;
+  z-index: 2;
 }
 
 .cards__front h3 {
@@ -1922,6 +1922,13 @@ button,
 }
 
 .cards__item .cards__back {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
   position: absolute;
   top: 0;
   left: 0;
@@ -1961,13 +1968,12 @@ button,
 
 .cards__back {
   padding: 25px 35px;
-  overflow: auto;
-  max-height: 386px;
+  position: relative;
+  height: 100%;
 }
 
-.cards__back::-webkit-scrollbar {
-  width: 4px;
-  background-color: #d8d8d9;
+.cards__back-list::-webkit-scrollbar {
+  width: 0;
 }
 
 .cards__back-list dt {
@@ -1978,8 +1984,10 @@ button,
 }
 
 .cards__back-list {
+  height: 89%;
   margin: 0;
   margin-bottom: 24px;
+  overflow-y: auto;
 }
 
 .cards__back-list dd {
@@ -1990,7 +1998,15 @@ button,
   margin-bottom: 11px;
 }
 
+.cards__back-list dd:last-child {
+  margin-bottom: 20px;
+}
+
 .cards__button {
+  position: absolute;
+  bottom: 35px;
+  left: 24px;
+  right: 0;
   border: none;
   outline: none;
   background-color: #f9fbfd;
@@ -1998,7 +2014,7 @@ button,
   text-align: center;
   font-weight: 600;
   font-size: 14px;
-  min-width: 210px;
+  max-width: 210px;
 }
 
 .cards__button:hover,
@@ -2008,6 +2024,10 @@ button,
 
 .cards__button:active {
   opacity: 0.3;
+}
+
+.cards__back-wrapper {
+  max-height: 84%;
 }
 
 .contacts__container {

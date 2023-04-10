@@ -25,7 +25,7 @@
 
 .cards__front {
   position: relative;
-  overflow: hidden;
+  z-index: 2;
 }
 
 .cards__front h3 {
@@ -52,6 +52,8 @@
 }
 
 .cards__item .cards__back {
+  display: flex;
+  flex-direction: column;
   position: absolute;
   top: 0;
   left: 0;
@@ -85,13 +87,12 @@
 
 .cards__back {
   padding: 25px 35px;
-  overflow: auto;
-  max-height: 386px;
+  position: relative;
+  height: 100%;
 }
 
-.cards__back::-webkit-scrollbar {
-  width: 4px;
-  background-color: $color-quartz;
+.cards__back-list::-webkit-scrollbar {
+  width: 0;
 }
 
 .cards__back-list dt {
@@ -102,8 +103,10 @@
 }
 
 .cards__back-list {
+  height: 89%;
   margin: 0;
   margin-bottom: 24px;
+  overflow-y: auto;
 }
 
 .cards__back-list dd {
@@ -114,7 +117,15 @@
   margin-bottom: 11px;
 }
 
+.cards__back-list dd:last-child {
+  margin-bottom: 20px;
+}
+
 .cards__button {
+  position: absolute;
+  bottom: 35px;
+  left: 24px;
+  right: 0;
   border: none;
   outline: none;
   background-color: $color-alice-blue;
@@ -122,7 +133,7 @@
   text-align: center;
   font-weight: 600;
   font-size: 14px;
-  min-width: 210px;
+  max-width: 210px;
 
   &:hover,
   &:focus {
@@ -133,3 +144,9 @@
     opacity: 0.3;
   }
 }
+
+
+.cards__back-wrapper {
+  max-height: 84%;
+}
+

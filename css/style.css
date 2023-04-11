@@ -1298,8 +1298,8 @@ button,
   transition: opacity 0.3s ease;
   pointer-events: none;
   position: absolute;
-  right: -1px;
-  top: 48%;
+  right: 15px;
+  top: 9%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -1307,6 +1307,7 @@ button,
 }
 
 .is-open .header__burger-icon {
+  position: fixed;
   opacity: 1;
   pointer-events: all;
   -webkit-transition: opacity 0.3s ease 0.2s;
@@ -1332,6 +1333,9 @@ button,
   -ms-grid-columns: auto 1fr auto;
   grid-template-columns: auto 1fr auto;
   position: relative;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(97%, #011c40), color-stop(3%, transparent));
+  background: -o-linear-gradient(top, #011c40 97%, transparent 3%);
+  background: linear-gradient(to bottom, #011c40 97%, transparent 3%);
 }
 
 .first-screen__image-wrapper {
@@ -1894,6 +1898,7 @@ button,
 }
 
 .cards {
+  background-color: #011c40;
   margin-left: auto;
   margin-right: auto;
   min-width: 260px;
@@ -1906,7 +1911,7 @@ button,
 }
 
 .cards__front h3 {
-  bottom: 3px;
+  top: 319px;
   left: 30px;
   content: "";
   position: absolute;
@@ -2206,6 +2211,7 @@ button,
 
   .trip__container img {
     padding-top: 9px;
+    max-width: 324px;
   }
 
   .trip__text-wrapper {
@@ -2342,7 +2348,7 @@ button,
   }
 
   .cards__front h3 {
-    bottom: 10px;
+    top: 315px;
     left: 35px;
   }
 
@@ -2502,7 +2508,7 @@ button,
   }
 
   .trip p {
-    max-width: 290px;
+    max-width: 100%;
   }
 
   .trip__container {
@@ -2510,12 +2516,13 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
     padding-top: 57px;
     padding-bottom: 85px;
     gap: 35px;
+  }
+
+  .trip__container img {
+    max-width: 100%;
   }
 
   .nav--header {
@@ -2702,7 +2709,7 @@ button,
   }
 
   .cards__front h3 {
-    bottom: 1px;
+    top: 324px;
     left: 25px;
   }
 

@@ -12,7 +12,6 @@
   <link rel="preload" href="fonts/montserrat-600.woff2" as="font">
   <link rel="preload" href="fonts/montserrat-700.woff2" as="font">
   <link rel="stylesheet" href="css/style.min.css">
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" crossorigin="">
 </head>
 
 <body>
@@ -32,10 +31,10 @@
           </a>
           <nav class="header__nav nav">
             <ul class="header__list">
-              <li class="header__item"><a class="header__link nav__link" href="#advantages">Преимущества</a></li>
-              <li class="header__item"><a class="header__link nav__link" href="#directions">Направления</a></li>
-              <li class="header__item"><a class="header__link nav__link" href="#cruises">Ближайшие круизы</a></li>
-              <li class="header__item"><a class="header__link nav__link" href="#contacts">Контакты</a></li>
+              <li class="header__item"><a class="header__link nav__link" href="#advantages" data-close-menu>Преимущества</a></li>
+              <li class="header__item"><a class="header__link nav__link" href="#directions" data-close-menu>Направления</a></li>
+              <li class="header__item"><a class="header__link nav__link" href="#cruises" data-close-menu>Ближайшие круизы</a></li>
+              <li class="header__item"><a class="header__link nav__link" href="#contacts" data-close-menu>Контакты</a></li>
             </ul>
           </nav>
 
@@ -198,7 +197,7 @@
                         <dd>от&nbsp;11500&nbsp;$</dd>
                       </dl>
                     </div>
-                    <a class="cards__button">Забронировать</a>
+                    <a class="cards__button" href="#!">Забронировать</a>
                   </div>
                 </div>
               </div>
@@ -242,7 +241,7 @@
                         <dd>от&nbsp;14500&nbsp;$</dd>
                       </dl>
                     </div>
-                    <a class="cards__button">Забронировать</a>
+                    <a class="cards__button" href="#!">Забронировать</a>
                   </div>
                 </div>
               </div>
@@ -288,7 +287,7 @@
                         <dd>от&nbsp;14500&nbsp;$</dd>
                       </dl>
                     </div>
-                    <a class="cards__button">Забронировать</a>
+                    <a class="cards__button" href="#!">Забронировать</a>
                   </div>
                 </div>
               </div>
@@ -332,7 +331,7 @@
                         <dd>от&nbsp;9700&nbsp;$</dd>
                       </dl>
                     </div>
-                    <a class="cards__button">Забронировать</a>
+                    <a class="cards__button" href="#!">Забронировать</a>
                   </div>
                 </div>
               </div>
@@ -377,7 +376,7 @@
                         <dd>от&nbsp;18600&nbsp;$</dd>
                       </dl>
                     </div>
-                    <a class="cards__button">Забронировать</a>
+                    <a class="cards__button" href="#!">Забронировать</a>
                   </div>
                 </div>
               </div>
@@ -421,7 +420,7 @@
                         <dd>от&nbsp;11700&nbsp;$</dd>
                       </dl>
                     </div>
-                    <a class="cards__button">Забронировать</a>
+                    <a class="cards__button" href="#!">Забронировать</a>
                   </div>
                 </div>
               </div>
@@ -465,7 +464,7 @@
                         <dd>от&nbsp;12500&nbsp;$</dd>
                       </dl>
                     </div>
-                    <a class="cards__button">Забронировать</a>
+                    <a class="cards__button" href="#!">Забронировать</a>
                   </div>
                 </div>
               </div>
@@ -509,7 +508,7 @@
                         <dd>от&nbsp;12300&nbsp;$</dd>
                       </dl>
                     </div>
-                    <a class="cards__button">Забронировать</a>
+                    <a class="cards__button" href="#!">Забронировать</a>
                   </div>
                 </div>
               </div>
@@ -560,7 +559,7 @@
             <picture>
               <source type="image/webp" media="(max-width: 767px)"
                 srcset="./img/form-cover-mobile@1x.webp 1x, ./img/form-cover-mobile@2x.webp 2x">
-              <source type="image/form-cover" media="(max-width: 1023px)"
+              <source type="image/webp" media="(max-width: 1023px)"
                 srcset="./img/form-cover-tablet@1x.webp 1x, ./img/form-cover-tablet@2x.webp 2x">
               <source type="image/webp" srcset="./img/form-cover@1x.webp 1x, ./img/form-cover@2x.webp 2x">
               <source media="(max-width: 767px)"
@@ -596,7 +595,6 @@
           </div>
         </div>
       </section>
-
     </main>
 
     <footer class="footer">
@@ -662,9 +660,5 @@
 
   <script src="js/vendor.min.js"></script>
   <script src="js/main.min.js"></script>
-  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-    crossorigin=""></script>
 </body>
-
 </html>

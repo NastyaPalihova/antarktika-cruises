@@ -31,7 +31,7 @@
   }
 
   @include vp-767 {
-    max-width: 290px;
+    max-width: 100%;
   }
 }
 
@@ -50,7 +50,6 @@
 
   @include vp-767 {
     flex-direction: column;
-    align-items: center;
     padding-top: 57px;
     padding-bottom: 85px;
     gap: 35px;
@@ -60,6 +59,11 @@
 .trip__container img {
   @include vp-1023 {
     padding-top: 9px;
+    max-width: 324px;
+  }
+
+  @include vp-767 {
+    max-width: 100%;
   }
 }
 

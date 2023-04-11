@@ -163,12 +163,13 @@
   transition: opacity 0.3s ease;
   pointer-events: none;
   position: absolute;
-  right: -1px;
-  top: 48%;
+  right: 15px;
+  top: 9%;
   transform: translateY(-50%);
   cursor: pointer;
 
   .is-open & {
+    position: fixed;
     opacity: 1;
     pointer-events: all;
     transition: opacity 0.3s ease 0.2s;

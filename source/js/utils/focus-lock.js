@@ -72,7 +72,7 @@ export class FocusLock {
 
   unlock(returnFocus = true) {
     if (this._endElement && returnFocus) {
-      this._endElement.focus();
+      // this._endElement.focus();
     }
     this._lockedSelector = null;
     this._focusableElements = null;

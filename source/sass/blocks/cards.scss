@@ -6,6 +6,7 @@
 }
 
 .cards {
+  background-color: $color-tangaroa;
   margin-left: auto;
   margin-right: auto;
   min-width: 260px;
@@ -28,19 +29,19 @@
 }
 
 .cards__front h3 {
-  bottom: 3px;
+  top: 319px;
   left: 30px;
   content: "";
   position: absolute;
   color: $color-alice-blue;
 
   @include vp-1023 {
-    bottom: 10px;
+    top: 315px;
     left: 35px;
   }
 
   @include vp-767 {
-    bottom: 1px;
+    top: 324px;
     left: 25px;
   }
 }

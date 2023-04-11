@@ -40,7 +40,9 @@ const observer = new IntersectionObserver((entries) => {
       ],
     });
 
-    observer.unobserve(map);
+    if (map) {
+      observer.unobserve(map);
+    }
   }
 }, {
   rootMargin: '0px',

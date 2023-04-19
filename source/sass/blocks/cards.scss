@@ -19,7 +19,7 @@
 
   @include vp-767 {
     min-width: 270px;
-    max-width: 270px;
+    max-width: 100%;
   }
 }
 
@@ -29,20 +29,20 @@
 }
 
 .cards__front h3 {
-  top: 319px;
-  left: 30px;
+  top: 82.4%;
+  left: 12%;
   content: "";
   position: absolute;
   color: $color-alice-blue;
 
   @include vp-1023 {
-    top: 315px;
-    left: 35px;
+    top: 81.6%;
+    left: 11%;
   }
 
   @include vp-767 {
-    top: 324px;
-    left: 25px;
+    top: 84.4%;
+    left: 9%;
   }
 }
 
@@ -75,11 +75,14 @@
 .cards__item:hover .cards__front,
 .cards:focus-within .cards__front {
   transform: rotateY(-180deg);
+  outline: none;
+
 }
 
 .cards__item:hover .cards__back,
 .cards:focus-within .cards__back {
   transform: rotateY(0);
+  outline: none;
 }
 
 .cards__front img {
@@ -124,9 +127,10 @@
 }
 
 .cards__button {
+  user-select: none;
   position: absolute;
   bottom: 35px;
-  left: 24px;
+  left: 25px;
   right: 0;
   border: none;
   outline: none;
@@ -136,11 +140,15 @@
   text-align: center;
   font-weight: 600;
   font-size: 14px;
-  max-width: 85%;
+  max-width: 80.7%;
 
   &:hover,
   &:focus {
     opacity: 0.6;
+  }
+
+  &:focus {
+    outline: $color-alice-blue 1px solid;
   }
 
   &:active {

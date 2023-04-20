@@ -671,6 +671,10 @@ button,
 
 .button {
   padding: 15px 30px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   color: #011c40;
   font-weight: 600;
   background-color: #f9fbfd;
@@ -1299,7 +1303,7 @@ button,
   pointer-events: none;
   position: absolute;
   right: 15px;
-  top: 9%;
+  top: 5%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -1449,23 +1453,22 @@ button,
 .nav__link:hover,
 .nav__link:focus {
   opacity: 0.6;
-  outline: none;
 }
 
 .nav__link:active {
   opacity: 0.3;
-  outline: none;
 }
 
 .logo--link:hover,
-.logo--link:focus {
+.logo--link:focus,
+.logo:hover,
+.logo:focus {
   opacity: 0.6;
-  outline: none;
 }
 
-.logo--link:active {
+.logo--link:active,
+.logo:active {
   opacity: 0.3;
-  outline: none;
 }
 
 .logo svg path {
@@ -1529,12 +1532,10 @@ button,
 .social-list__item-link:hover,
 .social-list__item-link:focus {
   opacity: 0.6;
-  outline: none;
 }
 
 .social-list__item-link:active {
   opacity: 0.3;
-  outline: none;
 }
 
 .advantages {
@@ -1552,6 +1553,7 @@ button,
   -ms-grid-columns: auto 1fr auto;
   grid-template-columns: auto 1fr auto;
   position: relative;
+  background-color: #f9fbfd;
 }
 
 .advantages__image-wrapper {
@@ -1683,6 +1685,7 @@ button,
   grid-template-columns: auto 1fr auto;
   position: relative;
   overflow: hidden;
+  background-color: #f9fbfd;
 }
 
 .form__image-wrapper {
@@ -1773,6 +1776,14 @@ button,
   margin-bottom: 20px;
 }
 
+.form__section-wrapper input:hover {
+  opacity: 0.6;
+}
+
+.form__section-wrapper input:active {
+  opacity: 0.3;
+}
+
 .form__section-wrapper input::-webkit-input-placeholder {
   font-family: inherit;
   font-size: 14px;
@@ -1856,6 +1867,7 @@ button,
 
 .form__agree:focus-within {
   opacity: 0.6;
+  outline: #f9fbfd 1px solid;
 }
 
 .form__agree-label:active .form__agree-mark,
@@ -1890,6 +1902,19 @@ button,
   display: none;
 }
 
+.form__input-wrapper {
+  position: relative;
+}
+
+.form__input-wrapper span {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  font-size: 12px;
+  font-family: inherit;
+  color: #ff1553;
+}
+
 .cards__item {
   display: block;
   text-decoration: none;
@@ -1911,8 +1936,8 @@ button,
 }
 
 .cards__front h3 {
-  top: 319px;
-  left: 30px;
+  top: 82.4%;
+  left: 12%;
   content: "";
   position: absolute;
   color: #f9fbfd;
@@ -1959,12 +1984,14 @@ button,
 .cards:focus-within .cards__front {
   -webkit-transform: rotateY(-180deg);
   transform: rotateY(-180deg);
+  outline: none;
 }
 
 .cards__item:hover .cards__back,
 .cards:focus-within .cards__back {
   -webkit-transform: rotateY(0);
   transform: rotateY(0);
+  outline: none;
 }
 
 .cards__front img {
@@ -2010,9 +2037,13 @@ button,
 }
 
 .cards__button {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   position: absolute;
   bottom: 35px;
-  left: 24px;
+  left: 25px;
   right: 0;
   border: none;
   outline: none;
@@ -2022,12 +2053,16 @@ button,
   text-align: center;
   font-weight: 600;
   font-size: 14px;
-  max-width: 85%;
+  max-width: 80.7%;
 }
 
 .cards__button:hover,
 .cards__button:focus {
   opacity: 0.6;
+}
+
+.cards__button:focus {
+  outline: #f9fbfd 1px solid;
 }
 
 .cards__button:active {
@@ -2348,8 +2383,8 @@ button,
   }
 
   .cards__front h3 {
-    top: 315px;
-    left: 35px;
+    top: 81.6%;
+    left: 11%;
   }
 
   .contacts__container {
@@ -2523,6 +2558,7 @@ button,
 
   .trip__container img {
     max-width: 100%;
+    width: 100%;
   }
 
   .nav--header {
@@ -2588,10 +2624,6 @@ button,
     z-index: 40;
   }
 
-  .advantages__container {
-    min-height: 997px;
-  }
-
   .advantages__wrapper {
     padding: 55px 15px;
   }
@@ -2614,6 +2646,7 @@ button,
     -ms-grid-rows: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 31px;
+    margin-bottom: 11px;
   }
 
   .catalog h2 {
@@ -2666,7 +2699,7 @@ button,
   .form p {
     font-size: 16px;
     line-height: 22px;
-    max-width: 257px;
+    max-width: 100%;
   }
 
   .form__section-wrapper input {
@@ -2688,7 +2721,6 @@ button,
 
   .form__agree-label {
     line-height: 11px;
-    max-width: 179px;
     padding-left: 28px;
   }
 
@@ -2699,18 +2731,14 @@ button,
     height: 20px;
   }
 
-  .form__text-wrapper br {
-    display: block;
-  }
-
   .cards {
     min-width: 270px;
-    max-width: 270px;
+    max-width: 100%;
   }
 
   .cards__front h3 {
-    top: 324px;
-    left: 25px;
+    top: 84.4%;
+    left: 9%;
   }
 
   .contacts__container {
@@ -2804,6 +2832,16 @@ button,
     -webkit-transform: translateY(calc(-50% - 5px));
     -ms-transform: translateY(calc(-50% - 5px));
     transform: translateY(calc(-50% - 5px));
+  }
+}
+
+@media (max-width: 420px) {
+  .form__agree-label {
+    max-width: 179px;
+  }
+
+  .form__text-wrapper br {
+    display: block;
   }
 }
 

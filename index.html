@@ -524,26 +524,31 @@
             <p>Забронируйте тур<br> за&nbsp;3-6 месяцев до&nbsp;даты выезда и&nbsp;сэкономьте до&nbsp;50%</p>
           </div>
 
-          <div class="form__wrapper">
+          <div class="form__wrapper" data-form-validate>
             <h3>Оставьте заявку и&nbsp;мы&nbsp;свяжемся с&nbsp;вами в&nbsp;ближайшее время</h3>
 
-            <form class="form__section" action="https://echo.htmlacademy.ru/" method="get" data-form-validate>
+            <form class="form__section" action="https://echo.htmlacademy.ru/" method="get">
               <div class="form__section-wrapper">
 
+                <div class="form__input-wrapper" data-validate-type="text" data-required  data-message-base="Поле обязательно к заполнению">
                 <label class="visually-hidden" for="username">Имя</label>
-                <input placeholder="Имя" type="text" name="username" id="username" data-validate-type="text" required>
+                <input placeholder="Имя" type="text" name="username" id="username"  required>
+              </div>
 
-                <label class="visually-hidden" for="phone">Телефон</label>
-                <div class="phone-mask">
-                  <input placeholder="Телефон" type="tel" name="phone" id="phone" data-validate-type="phone" required>
+
+                <div class="phone-mask form__input-wrapper" data-required data-validate-type="phone" data-message-base="Поле обязательно к заполнению" data-message-extra="Номер введен некорректно">
+                  <label class="visually-hidden" for="phone">Телефон</label>
+                  <input placeholder="Телефон" type="tel" name="phone" id="phone" required>
                 </div>
 
+                <div class="form__input-wrapper" data-validate-type="email" data-required data-message-base="Поле обязательно к заполнению" data-message-extra="Email введен некорректно">
                 <label class="visually-hidden" for="email">Email</label>
-                <input placeholder="Email" type="email" name="email" id="email" data-validate-type="email" required>
+                <input placeholder="Email" type="email" name="email" id="email" required>
+              </div>
 
                 <div class="form__submit-section">
                   <div class="form__agree">
-                    <label class="form__agree-label" for="agree-checkbox">
+                    <label class="form__agree-label" for="agree-checkbox"  data-validate-type="checkbox" data-required checked data-message-base="Нажмите на флажок">
                       <input class="visually-hidden" id="agree-checkbox" type="checkbox" name="agree" checked required>
                       <span class="form__agree-mark"></span>
                       <span>Я&nbsp;согласен на&nbsp;обработку моих персональных данных</span>

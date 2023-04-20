@@ -1833,6 +1833,14 @@ button,
 
 .form__agree {
   margin-bottom: 28px;
+  position: relative;
+}
+
+.form__agree .input-message {
+  position: absolute;
+  top: 23px;
+  left: 0;
+  color: #ff1553;
 }
 
 .form__button {
@@ -1910,7 +1918,7 @@ button,
   position: absolute;
   top: 40px;
   left: 0;
-  font-size: 12px;
+  font-size: 10px;
   font-family: inherit;
   color: #ff1553;
 }

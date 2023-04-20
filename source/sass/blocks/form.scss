@@ -224,10 +224,18 @@
 
 .form__agree {
   margin-bottom: 28px;
+  position: relative;
 
   @include vp-767 {
     margin-bottom: 27px;
   }
+}
+
+.form__agree .input-message {
+  position: absolute;
+  top: 23px;
+  left: 0;
+  color: $color-torch-red;
 }
 
 .form__button {
@@ -322,7 +330,7 @@
   position: absolute;
   top: 40px;
   left: 0;
-  font-size: 12px;
+  font-size: 10px;
   font-family: inherit;
   color: $color-torch-red;
 }

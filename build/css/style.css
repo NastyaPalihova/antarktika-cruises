@@ -1876,9 +1876,14 @@ button,
   cursor: pointer;
 }
 
-.form__agree:focus-within {
+.form__agree:focus {
   opacity: 0.6;
   outline: #f9fbfd 1px solid;
+}
+
+.form__agree-label:active .form__agree-mark,
+.form__agree span:active {
+  opacity: 0.3;
 }
 
 .form__agree-label input:disabled + .form__agree-mark {

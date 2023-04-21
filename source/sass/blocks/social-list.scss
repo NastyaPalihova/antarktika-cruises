@@ -1,7 +1,8 @@
 .social-list {
   display: flex;
   gap: 27px;
-  align-items: center;
+  // align-items: center;
+  max-width: 120px;
   margin-left: auto;
   padding-top: 11px;
   flex-wrap: wrap;

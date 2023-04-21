@@ -9,11 +9,19 @@
   font-weight: 600;
   line-height: 42px;
 
+  @include vp-1279 {
+    white-space: nowrap;
+  }
+
   @include vp-1023 {
+    white-space: normal;
     font-size: 26px;
     line-height: 36px;
-    max-width: 205px;
     margin-bottom: 15px;
+  }
+
+  @include vp-850 {
+    max-width: 205px;
   }
 
   @include vp-767 {
@@ -27,12 +35,12 @@
   max-width: 512px;
 
   @include vp-1023 {
-    max-width: 324px;
-  }
-
-  @include vp-767 {
     max-width: 100%;
   }
+}
+
+.trip p:not(:last-child) {
+  margin-bottom: 20px;
 }
 
 .trip__container {
@@ -41,6 +49,11 @@
   display: flex;
   gap: 88px;
   justify-content: center;
+
+  @include vp-1279 {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
 
   @include vp-1023 {
     padding-top: 91px;
@@ -59,6 +72,10 @@
 .trip__container img {
   @include vp-1023 {
     padding-top: 9px;
+    max-width: 450px;
+  }
+
+  @include vp-850 {
     max-width: 324px;
   }
 

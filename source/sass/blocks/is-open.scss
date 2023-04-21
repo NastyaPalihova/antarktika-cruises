@@ -18,4 +18,8 @@
     margin-left: 36px;
     z-index: 40;
   }
+
+  .is-open .header__nav::-webkit-scrollbar {
+    width: 0;
+  }
 }

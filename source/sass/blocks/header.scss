@@ -19,6 +19,8 @@
   top: 0;
   width: 100%;
   z-index: 3;
+  max-height: 200px;
+  overflow: hidden;
 
   @include vp-1023 {
     padding: 29px 45px;
@@ -109,6 +111,7 @@
     opacity: 1;
     pointer-events: all;
     visibility: visible;
+    overflow: auto;
   }
 }
 

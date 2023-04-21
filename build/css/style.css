@@ -1249,6 +1249,8 @@ button,
   top: 0;
   width: 100%;
   z-index: 3;
+  max-height: 200px;
+  overflow: hidden;
 }
 
 .header__burger {
@@ -1264,6 +1266,7 @@ button,
   opacity: 1;
   pointer-events: all;
   visibility: visible;
+  overflow: auto;
 }
 
 .header__nav .header__item {
@@ -1426,6 +1429,10 @@ button,
   max-width: 512px;
 }
 
+.trip p:not(:last-child) {
+  margin-bottom: 20px;
+}
+
 .trip__container {
   padding-top: 112px;
   padding-bottom: 145px;
@@ -1488,18 +1495,12 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding: 35px 0;
+  padding: 50px 0 35px 0;
   width: 100%;
   gap: 40px;
 }
 
 .footer__wrapper .logo {
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1512,7 +1513,7 @@ button,
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   gap: 33px;
-  max-width: 600px;
+  padding-top: 7px;
 }
 
 .social-list {
@@ -1520,9 +1521,7 @@ button,
   display: -ms-flexbox;
   display: flex;
   gap: 27px;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  max-width: 120px;
   margin-left: auto;
   padding-top: 11px;
   -ms-flex-wrap: wrap;
@@ -1638,6 +1637,9 @@ button,
   -ms-grid-columns: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 40px;
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .catalog h2 {
@@ -1738,8 +1740,8 @@ button,
   z-index: 5;
   min-height: 455px;
   padding: 50px;
-  right: 163px;
-  top: 49px;
+  left: 58.5%;
+  top: 8.9%;
   background-color: #011c40;
 }
 
@@ -1757,6 +1759,7 @@ button,
   line-height: 60px;
   font-weight: 700;
   text-align: start;
+  max-width: 500px;
 }
 
 .form p {
@@ -1878,11 +1881,6 @@ button,
   outline: #f9fbfd 1px solid;
 }
 
-.form__agree-label:active .form__agree-mark,
-.form__agree span:active {
-  opacity: 0.3;
-}
-
 .form__agree-label input:disabled + .form__agree-mark {
   opacity: 0.1;
 }
@@ -1949,6 +1947,8 @@ button,
   content: "";
   position: absolute;
   color: #f9fbfd;
+  overflow: hidden;
+  max-height: 50px;
 }
 
 .cards__item .cards__front {
@@ -1986,6 +1986,8 @@ button,
 .cards__back h3 {
   margin: 0;
   margin-bottom: 14px;
+  overflow: hidden;
+  max-height: 80px;
 }
 
 .cards__item:hover .cards__front,
@@ -2059,9 +2061,11 @@ button,
   color: #011c40;
   padding: 8px;
   text-align: center;
+  max-width: 80.7%;
   font-weight: 600;
   font-size: 14px;
-  max-width: 80.7%;
+  max-height: 80px;
+  overflow: hidden;
 }
 
 .cards__button:hover,
@@ -2171,13 +2175,22 @@ button,
 }
 
 @media (max-width: 1279px) {
+  .trip h2 {
+    white-space: nowrap;
+  }
+
+  .trip__container {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
   .form__text-wrapper {
     padding-left: 103px;
     max-width: 635px;
   }
 
   .form__wrapper {
-    right: 105px;
+    left: 51.5%;
   }
 
   .contacts__text {
@@ -2236,14 +2249,14 @@ button,
   }
 
   .trip h2 {
+    white-space: normal;
     font-size: 26px;
     line-height: 36px;
-    max-width: 205px;
     margin-bottom: 15px;
   }
 
   .trip p {
-    max-width: 324px;
+    max-width: 100%;
   }
 
   .trip__container {
@@ -2254,7 +2267,7 @@ button,
 
   .trip__container img {
     padding-top: 9px;
-    max-width: 324px;
+    max-width: 450px;
   }
 
   .trip__text-wrapper {
@@ -2269,7 +2282,11 @@ button,
   .footer__wrapper {
     min-height: 120px;
     gap: 25px;
-    padding: 35px 0 37px 0;
+    padding: 41px 0 37px 0;
+  }
+
+  .footer__wrapper .logo {
+    padding-top: 10px;
   }
 
   .footer .nav-link {
@@ -2354,7 +2371,7 @@ button,
   }
 
   .form__wrapper {
-    top: 59.5%;
+    top: 59.4%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -2395,6 +2412,15 @@ button,
     left: 11%;
   }
 
+  .cards__item .cards__back {
+    padding: 28px 34px 35px 34px;
+  }
+
+  .cards__button {
+    max-width: 76.9%;
+    left: 35px;
+  }
+
   .contacts__container {
     padding-top: 100px;
     padding-bottom: 100px;
@@ -2403,7 +2429,7 @@ button,
 
   .contacts__map {
     height: 335px;
-    min-width: 324px;
+    min-width: 48%;
   }
 
   .contacts__text {
@@ -2417,6 +2443,16 @@ button,
   .contacts__text h3 {
     line-height: 26px;
     margin-bottom: 29px;
+  }
+}
+
+@media (max-width: 850px) {
+  .trip h2 {
+    max-width: 205px;
+  }
+
+  .trip__container img {
+    max-width: 324px;
   }
 }
 
@@ -2550,10 +2586,6 @@ button,
     line-height: 34px;
   }
 
-  .trip p {
-    max-width: 100%;
-  }
-
   .trip__container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2583,15 +2615,16 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    padding: 40px 0;
+    padding: 31px 0;
     row-gap: 0;
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
+    max-width: 130px;
   }
 
   .footer__wrapper .logo {
-    margin-bottom: 22px;
+    margin-bottom: 15px;
   }
 
   .footer__nav {
@@ -2630,6 +2663,10 @@ button,
   .is-open .logo {
     margin-left: 36px;
     z-index: 40;
+  }
+
+  .is-open .header__nav::-webkit-scrollbar {
+    width: 0;
   }
 
   .advantages__wrapper {
@@ -2687,7 +2724,7 @@ button,
 
   .form__wrapper {
     min-width: 290px;
-    top: 60.7%;
+    top: 61.2%;
     min-height: 460px;
     padding: 40px 30px 20px 30px;
   }
@@ -2695,7 +2732,7 @@ button,
   .form__wrapper h3 {
     max-width: 214px;
     text-align: center;
-    margin: -3px auto 29px;
+    margin: -5px auto 29px;
   }
 
   .form h2 {
@@ -2747,6 +2784,15 @@ button,
   .cards__front h3 {
     top: 84.4%;
     left: 9%;
+  }
+
+  .cards__item .cards__back {
+    padding: 31px 23px 35px;
+  }
+
+  .cards__button {
+    max-width: 80.9%;
+    left: 25px;
   }
 
   .contacts__container {
